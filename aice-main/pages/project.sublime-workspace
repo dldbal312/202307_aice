@@ -1,0 +1,1162 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tran",
+				"transform\tproperty"
+			],
+			[
+				"vi",
+				"visibility\tproperty"
+			],
+			[
+				"box",
+				"box-shadow\tproperty"
+			],
+			[
+				"le",
+				"letter-spacing\tproperty"
+			],
+			[
+				"bacg",
+				"background-color\tproperty"
+			],
+			[
+				"back",
+				"background\tproperty"
+			],
+			[
+				"it",
+				"align-items\tproperty"
+			],
+			[
+				"flex",
+				"flex-wrap\tproperty"
+			],
+			[
+				"nor",
+				"nowrap\twhite-space"
+			],
+			[
+				"background",
+				"background-color\tproperty"
+			],
+			[
+				"font-we",
+				"font-weight\tproperty"
+			],
+			[
+				"flex-bi",
+				"flex-basis\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"bac",
+				"background-color\tproperty"
+			],
+			[
+				"ali",
+				"align-items\tproperty"
+			],
+			[
+				"trans",
+				"transition\tproperty"
+			],
+			[
+				"tra",
+				"transition\tproperty"
+			],
+			[
+				"l",
+				"translate()\ttransform"
+			],
+			[
+				"s",
+				"flex-start\talign-items"
+			],
+			[
+				"min-wi",
+				"min-width"
+			],
+			[
+				"tr",
+				"translateY()\ttransform"
+			],
+			[
+				"trna",
+				"transform\tproperty"
+			],
+			[
+				"a",
+				"absolute"
+			],
+			[
+				"no",
+				"nowrap\twhite-space"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"alin",
+				"align-content\tproperty"
+			],
+			[
+				"fle",
+				"inline-flex\tdisplay"
+			],
+			[
+				"border-ra",
+				"border-radius\tproperty"
+			],
+			[
+				"whi",
+				"white-space\tproperty"
+			],
+			[
+				"cont",
+				"justify-content\tproperty"
+			],
+			[
+				"inlin",
+				"inline-block\tdisplay"
+			],
+			[
+				"box-",
+				"box-sizing\tproperty"
+			],
+			[
+				"ma",
+				"margin\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/_PROJECT/test_study/html/python02.py",
+			"settings":
+			{
+				"buffer_size": 144,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<pre class=\"brush:js javascrip\">\nlet text230515 = document.querySelector('#text230515');\n\ntext230515.setAttribute('data-text',text.innerHTML);\n\ndocument.body.innerHTML += \"<div style=\"position: absolute; bottom: 0; left: 0; right: 0; padding: .5em; font-size: 12px; font-family: monospace; text-align: center; pointer-event: none;\">Click anywhere to re-run</div>\";\n\nvar lr = document.querySelector('html');\nwindow.addEventListener('click',()=>{\n  var newone = lr.cloneNode(true);\n  lr.parentNode.replaceChild(newone, lr);\n  lr = newone;\n});\n</pre>",
+			"settings":
+			{
+				"buffer_size": 547,
+				"line_ending": "Windows",
+				"name": "<pre class=\"brush:js javascrip\">"
+			}
+		},
+		{
+			"contents": "\nfunction autoGaPlan(){\n    $('.btn_auto_ga').each(function(){\n        var statCdTxt = $('#plnSttsNm').val().replace(/(\\s*)/g, \"\");\n        var txtOnly = $(this).text().split('_').reverse()[0];\n        var valResult = $(this).text().replace(/(\\s*)/g, \"\");\n        var onclickDefault = $(this).attr('onclick');\n\n        onclickDefault == undefined ? onclickDefault = '' : onclickDefault = onclickDefault + ';';\n\n        $(this).text().replace(txtOnly, '');\n\n        if($(this).find('.blind').length > 0){\n             //배너같은경우\n            $(this).find('.blind').text(txtOnly);\n        }else{\n            $(this).text(txtOnly);\n        };\n\n\n        $(this).attr(\"onclick\", onclickDefault + \"gaEventTracker(true, '샵_기획전', '샵_기획전_\" + statCdTxt + \"', '\" + valResult + \"'); trackClicks('Shop_기획전','^Shop_기획전^\" + statCdTxt + \"^\" + valResult + \"');\")\n\n        if(this.href.match('orderTelCounselForm.do')){\n            $(this).addClass('goTelOrderCounsel'); \n            $(this).attr({\n                'plndispyn' : 'Y',\n                'pageprodno' : this.href.split('=')[1],\n                'inpagename' : '샵_기획전_' + statCdTxt + '_' + valResult,\n                'title' : '새창열림'\n            })\n        };\n    });\n};\nautoGaPlan();",
+			"settings":
+			{
+				"buffer_size": 1223,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "bounce\nflash\npulse\nrubberBand\nshakeX\nshakeY\nheadShake\nswing\ntada\nwobble\njello\nheartBeat\nbackInDown\nbackInLeft\nbackInRight\nbackInUp\nbackOutDown\nbackOutLeft\nbackOutRight\nbackOutUp\nbounceIn\nbounceInDown\nbounceInLeft\nbounceInRight\nbounceInUp\nbounceOut\nbounceOutDown\nbounceOutLeft\nbounceOutRight\nbounceOutUp\nfadeIn\nfadeInDown\nfadeInDownBig\nfadeInLeft\nfadeInLeftBig\nfadeInRight\nfadeInRightBig\nfadeInUp\nfadeInUpBig\nfadeInTopLeft\nfadeInTopRight\nfadeInBottomLeft\nfadeInBottomRight\nfadeOut\nfadeOutDown\nfadeOutDownBig\nfadeOutLeft\nfadeOutLeftBig\nfadeOutRight\nfadeOutRightBig\nfadeOutUp\nfadeOutUpBig\nfadeOutTopLeft\nfadeOutTopRight\nfadeOutBottomRight\nfadeOutBottomLeft\nflip\nflipInX\nflipInY\nflipOutX\nflipOutY\nlightSpeedInRight\nlightSpeedInLeft\nlightSpeedOutRight\nlightSpeedOutLeft\nrotateIn\nrotateInDownLeft\nrotateInDownRight\nrotateInUpLeft\nrotateInUpRight\nrotateOut\nrotateOutDownLeft\nrotateOutDownRight\nrotateOutUpLeft\nrotateOutUpRight\nhinge\njackInTheBox\nrollIn\nrollOut\nzoomIn\nzoomInDown\nzoomInLeft\nzoomInRight\nzoomInUp\nzoomOut\nzoomOutDown\nzoomOutLeft\nzoomOutRight\nzoomOutUp\nslideInDown\nslideInLeft\nslideInRight\nslideInUp\nslideOutDown\nslideOutLeft\nslideOutRight\nslideOutUp",
+			"settings":
+			{
+				"buffer_size": 1156,
+				"line_ending": "Windows",
+				"name": "bounce"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Set Syntax: Git Log"
+			],
+			[
+				"ww",
+				"Word Wrap: Toggle"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"syn scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"syn sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"syn css",
+				"Set Syntax: CSS"
+			],
+			[
+				"syn html",
+				"Set Syntax: HTML"
+			],
+			[
+				"pag",
+				"Package Control: Install Package"
+			],
+			[
+				"ftp",
+				"SFTP: Cancel Upload"
+			],
+			[
+				"page",
+				"Package Control: Install Package"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"package ",
+				"Package Control: Install Package"
+			],
+			[
+				"pak",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 185.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/_PROJECT",
+		"/D/_PROJECT/test_study",
+		"/D/_PROJECT/test_study/html"
+	],
+	"file_history":
+	[
+		"/C/Users/ELUO/Downloads/fullPage.js-master/fullPage.js-master/examples/auto-height.html",
+		"/D/_PROJECT/nabiya2/css/common.css",
+		"/N/. Personal_folder/_PROJECT/test_study/html/test01.html",
+		"/C/Users/ELUO/Downloads/fullPage.js-master/fullPage.js-master/examples/active-slide.html",
+		"/C/Users/ELUO/Downloads/fullPage.js-master/fullPage.js-master/examples/backgrounds.html",
+		"/C/Users/ELUO/Downloads/fullPage.js-master/fullPage.js-master/examples/cards.html",
+		"/C/Users/ELUO/Downloads/fullPage.js-master/fullPage.js-master/examples/gradient-backgrounds.html",
+		"/C/Users/ELUO/Downloads/fullPage.js-master/fullPage.js-master/examples/scroll-after-fullpage.html",
+		"/N/. Personal_folder/_PROJECT/test_study/html/header_01.html",
+		"/C/Users/ELUO/Downloads/index/index.php",
+		"/C/Users/ELUO/Downloads/fullPage.js-master/fullPage.js-master/examples/callbacks.html",
+		"/C/Users/ELUO/Downloads/css파일/style.css",
+		"/D/_PROJECT/nabiya2/html/signup_form.html",
+		"/D/_PROJECT/nabiya/guide/menulist.html",
+		"/D/_PROJECT/nabiya2/guide/menulist.html",
+		"/D/_PROJECT/nabiya2/guide/guide.html",
+		"/D/_PROJECT/nabiya2/html/gallery_view.html",
+		"/D/_PROJECT/nabiya2/phpno/gallery_view.html",
+		"/D/_PROJECT/nabiya2/css/reset.css",
+		"/D/_PROJECT/nabiya2/js/commonUI.js",
+		"/D/_PROJECT/nabiya2/js/html_commonUI.js",
+		"/C/Users/ELUO/Downloads/index.zip",
+		"/N/. Personal_folder/_PROJECT/nabiya2/html/include/head.html",
+		"/D/_PROJECT/nabiya2/html/include/head.html",
+		"/D/_PROJECT/nabiya2/css/layout.css",
+		"/D/_PROJECT/nabiya2/css/sub.css",
+		"/D/_PROJECT/nabiya2/css/content.css",
+		"/D/_PROJECT/nabiya2/html/partner_list.html",
+		"/D/_PROJECT/nabiya2/js/content.js",
+		"/D/_PROJECT/nabiya2/phpno/partner_list.html",
+		"/D/_PROJECT/nabiya2/html/include/aside.html",
+		"/D/_PROJECT/nabiya2/html/include/header.html",
+		"/D/_PROJECT/nabiya2/html/main.html",
+		"/D/_PROJECT/nabiya2/html/gallery_list.html",
+		"/D/_PROJECT/nabiya2/php/signup_form.html",
+		"/D/_PROJECT/nabiya2/php/partner_list.html",
+		"/D/_PROJECT/nabiya2/php/main.html",
+		"/D/_PROJECT/nabiya2/php/gallery_view.html",
+		"/D/_PROJECT/nabiya2/php/gallery_list.html",
+		"/D/_PROJECT/nabiya2/php/include/head.html",
+		"/D/_PROJECT/nabiya2/_html/gallery_list.html",
+		"/D/_PROJECT/nabiya2/_html/partner_list.html",
+		"/D/_PROJECT/nabiya2/_html/main.html",
+		"/D/_PROJECT/nabiya2/_html/include/header.html",
+		"/D/_PROJECT/nabiya2/_html/include/aside.html",
+		"/D/_PROJECT/nabiya2/_html/gallery_view.html",
+		"/D/_PROJECT/nabiya/css/common.css",
+		"/D/_PROJECT/nabiya/css/layout.css",
+		"/D/_PROJECT/nabiya/html/gallery_list.html",
+		"/D/_PROJECT/nabiya2/html/include/footer.html",
+		"/D/_PROJECT/nabiya2/js/main.js",
+		"/D/_PROJECT/nabiya/js/main.js",
+		"/C/Users/ELUO/AppData/Roaming/Sublime Text 3/Packages/User/FindResultsApplyChanges.sublime-settings",
+		"/D/_PROJECT/nabiya2/html/detail_view.html",
+		"/D/_PROJECT/nabiya/html/include/header.html",
+		"/D/_PROJECT/nabiya2/html/partnershop_list.html",
+		"/D/_PROJECT/aice-main/styles/reset.css",
+		"/D/_PROJECT/nabiya/css/reset.css",
+		"/D/_PROJECT/nabiya/html/detail_view.html",
+		"/C/Users/ELUO/Downloads/statics/html/designContest.html",
+		"/C/Users/ELUO/Downloads/statics/html/findPassword.html",
+		"/D/_PROJECT/nabiya2/css/main.css",
+		"/D/_PROJECT/nabiya/html/main.html",
+		"/D/_PROJECT/nabiya/sftp-config.json",
+		"/D/_PROJECT/nabiya/guide/guide.html",
+		"/D/_PROJECT/aice-main/pages/mypage_05.html",
+		"/D/_PROJECT/saju/html/main.html",
+		"/D/_PROJECT/nabiya/js/commonUI.js",
+		"/D/_PROJECT/aice-main/pages/project_01_05_01.html",
+		"/D/_PROJECT/aice-main/pages/project_01_03.html",
+		"/D/_PROJECT/aice-main/pages/project_01_04.html",
+		"/D/_PROJECT/aice-main/pages/project_01.html",
+		"/D/_PROJECT/aice-main/pages/project_01_01.html",
+		"/D/_PROJECT/aice-main/css/style.scss",
+		"/D/_PROJECT/nabiya/js/sub.js",
+		"/D/_PROJECT/aice-main/pages/practice-detail__bk.html",
+		"/D/_PROJECT/aice-main/pages/practice-detail.html",
+		"/D/_PROJECT/aice-main/pages/mypage_01.html",
+		"/D/_PROJECT/aice-main/pages/project_main.html",
+		"/D/_PROJECT/aice-main/pages/ready-player.html",
+		"/D/_PROJECT/aice-main/pages/ready-detail.html",
+		"/D/_PROJECT/aice-main/pages/project_01_06_01.html",
+		"/D/_PROJECT/aice-main/pages/project_01_06.html",
+		"/D/_PROJECT/aice-main/pages/project_01_05.html",
+		"/D/_PROJECT/aice-main/pages/project_01_04_01.html",
+		"/D/_PROJECT/aice-main/pages/project_01_02.html",
+		"/D/_PROJECT/aice-main/pages/edu-register.html",
+		"/D/_PROJECT/aice-main/pages/search-detail.html",
+		"/D/_PROJECT/aice-main/pages/index.html",
+		"/D/_PROJECT/aice-main/pages/search.html",
+		"/D/_PROJECT/aice-main/scripts/script.js",
+		"/C/Users/ELUO/AppData/Roaming/Sublime Text 3/Packages/FindResultsApplyChanges/FindResultsApplyChanges.sublime-settings",
+		"/C/Users/ELUO/AppData/Roaming/Sublime Text 3/Packages/FindResultsApplyChanges-master/Default (OSX).sublime-keymap",
+		"/C/Users/ELUO/AppData/Roaming/Sublime Text 3/Packages/FindResultsApplyChanges-master/FindResultsApplyChanges.py",
+		"/C/Users/ELUO/AppData/Roaming/Sublime Text 3/Packages/FindResultsApplyChanges-master/FindResultsApplyChanges.sublime-settings",
+		"/C/Users/ELUO/AppData/Roaming/Sublime Text 3/Packages/FindResultsApplyChanges-master/Commands.sublime-commands",
+		"/C/Users/ELUO/AppData/Roaming/Sublime Text 3/Packages/FindResultsApplyChanges-master/Default (Windows).sublime-keymap",
+		"/C/Users/ELUO/AppData/Roaming/Sublime Text 3/Packages/FindResultsApplyChanges-master/Default (Linux).sublime-keymap",
+		"/C/Users/ELUO/AppData/Roaming/Sublime Text 3/Packages/FindResultsApplyChanges-master/FindExcludePatterns.py",
+		"/D/_PROJECT/aice-main/pages/popup_project_mypage.html",
+		"/D/_PROJECT/aice-main/pages/practice.html",
+		"/D/_PROJECT/aice-main/pages/ready.html",
+		"/D/_PROJECT/aice-main/pages/vod.html",
+		"/D/_PROJECT/aice-main/pages/data-sceince.html",
+		"/D/_PROJECT/aice-main/pages/insight.html",
+		"/D/_PROJECT/aice-main/styles/font.css",
+		"/D/_PROJECT/newmsg/www/a/c_view.php",
+		"/D/_PROJECT/newmsg/www/theme/wb0101/skin/board/product_01/list.skin.php",
+		"/D/_PROJECT/newmsg/www/theme/wb0101/skin/board/gallery_01/list.skin.php",
+		"/D/_PROJECT/newmsg/www/theme/wb0101/head.php",
+		"/D/_PROJECT/newmsg/www/skin/board/gallery/list.skin.php",
+		"/D/_PROJECT/newmsg/www/theme/wb0101/css/board.css",
+		"/D/_PROJECT/newmsg/www/theme/wb0101/skin/board/product_detail_01/list.skin.php",
+		"/D/_PROJECT/newmsg/www/theme/wb0101/skin/latest/latest_gallRocket/latest.skin.php",
+		"/D/_PROJECT/newmsg/www/theme/wb0101/skin/latest/latest_gallRocket/style.css",
+		"/D/test.hmlt.html",
+		"/D/_PROJECT/newmsg/www/theme/wb0101/z_css_edit.php",
+		"/D/_PROJECT/newmsg/www/theme/wb0101/skin/board/product_01/style.css",
+		"/C/Users/ELUO/AppData/Local/Sublime Text 3/Cache/Erlang/HTML (Erlang).sublime-syntax.cache",
+		"/D/_PROJECT/newmsg/www/theme/wb0101/css/tblayout.css",
+		"/D/_PROJECT/newmsg/www/theme/wb0101/skin/board/product_01/view.skin.php",
+		"/D/_PROJECT/newmsg/www/a/c_review.php",
+		"/D/_PROJECT/newmsg/www/mainpage/sec02.php",
+		"/D/_PROJECT/newmsg/www/theme/wb0101/skin/board/product_01_backup/view.skin_221012.php",
+		"/D/_PROJECT/newmsg/www/theme/wb0101/skin/board/product_01_backup/view.skin.php",
+		"/C/Users/ELUO/AppData/Roaming/Sublime Text 3/Installed Packages/Emmet.sublime-package",
+		"/D/_PROJECT/newmsg/www/z_info.php",
+		"/D/_PROJECT/newmsg/www/theme/wb0101/skin/board/product_01/list.skin_221110.php"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 183.0,
+		"where_history":
+		[
+			"D:\\_PROJECT\\nabiya2\\",
+			"D:\\_PROJECT\\nabiya2\\html",
+			"D:\\_PROJECT\\nabiya2\\php",
+			"D:\\_PROJECT\\nabiya2",
+			"D:\\_PROJECT\\nabiya2\\html",
+			"D:\\_PROJECT\\nabiya2",
+			"D:\\_PROJECT\\aice-main\\pages"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			" | <span>",
+			"p></div>",
+			"pan> | <span>",
+			"| <span>",
+			"div><div class=\"list_btn_box\"><",
+			"<p><span>",
+			"</h3>",
+			"<h3 class=\"tof\">",
+			"2023-06-05",
+			"<h3 class=\"tof\">",
+			"반납예정일",
+			"<h3 class=\"tof\">",
+			"10000",
+			"\t",
+			"2023-06-05",
+			"1000",
+			"1",
+			"\n  ",
+			"\t",
+			"'",
+			"text",
+			"#text",
+			"text",
+			"$background",
+			"background",
+			"002C3E",
+			"ed3833",
+			"EFEFEF",
+			"[",
+			"]",
+			"<ul class=\"",
+			"back",
+			"Back",
+			"back",
+			"</section>",
+			"<h3 class=\"a",
+			"data-animation",
+			"slideOutLeft",
+			"slideOutRight",
+			"</h3>\n        <div>",
+			"</h3>",
+			"ion-item--title\">",
+			"=\"tooltip\">Copy cl",
+			"myContent",
+			"=\"tooltip\">Copy cl",
+			"main_sec2_bg",
+			"\"https://news.samsungdisplay.com/@resource/js",
+			"wrapper",
+			"../",
+			"#header.mobile .header_wrap .utility_cont .open_btn > a.go_search",
+			"menu_btn",
+			"#header.mobile .header_wrap .utility_cont .menu_btn",
+			"myContent",
+			"credits",
+			"lazyLoad",
+			"slidesNavigation",
+			"firstPage",
+			"class=\"javascript\"",
+			"<pre id=\"code_1672987801797\" class=\"javascript\"",
+			"ture",
+			"'",
+			"<?php inclu",
+			".frm_lab .txt",
+			"/temp/temp_map",
+			"temp_map",
+			".frm_lab .txt",
+			"g_menu",
+			"/img/main/",
+			"/img/main/img_b",
+			"../img/main/img_best2.jpg",
+			".header .nav_wrap",
+			"search_area",
+			".header .nav .itm",
+			".header .nav .itm .itmlink",
+			"nav_wrap",
+			"html_commonUI",
+			"allMenuTop",
+			"<script src=\"../js/commonUI.js\"></script>",
+			"<!-- <?php include (\"include/footer.html\"); ?> -->",
+			"<!-- <?php include (\"include/aside.html\"); ?> -->",
+			"<!-- <?php include (\"include/header.html\"); ?> -->",
+			"<!-- <?php include (\"include/header.html\"); ?> -->\n    \n        <!-- content -->",
+			"<!-- <?php include (\"include/footer.html\"); ?> -->",
+			"<!-- <?php include (\"include/aside.html\"); ?> -->",
+			"<!-- <?php include (\"include/header.html\"); ?> -->",
+			"<!DOCTYPE html>\n<head>\n    <meta charset=\"UTF-8\"> \n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n    <meta name=\"viewport\" content=\"width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0\" />\n    <title>나비야넷</title>\n    <meta name=\"content-language\" content=\"ko\">\n    <meta name=\"title\" content=\"나비야넷\">\n    <meta name=\"subject\" content=\"나비야넷\">\n    <meta name=\"copyright\" content=\"나비야넷\">\n    <meta name=\"description\" content=\"전국의 마사지맛집, 나비야넷에 다 모여있어요\">\n    <meta name=\"keywords\" content=\"마사지,1인샵,다인샵,왁싱,홈케어,마사지정보,나비야넷,마사지맛집\">\n    <meta property=\"og:type\" content=\"website\">\n    <meta property=\"og:url\" content=\"https://wecan001.cafe24.com/\">\n    <meta property=\"og:title\" content=\"나비야넷\">\n    <meta property=\"og:image\" content=\"https://wecan001.cafe24.com/a1/img/common/title_icon.png\">\n    <meta property=\"og:description\" content=\"전국의 마사지맛집, 나비야넷에 다 모여있어요\">\n    <meta property=\"og:site_name\" content=\"나비야넷\">\n    <meta name=\"twitter:card\" content=\"마사지,1인샵,다인샵,왁싱,홈케어,마사지정보,나비야넷,마사지맛집\" /> \n    <meta name=\"twitter:title\" content=\"나비야넷\" /> \n    <meta name=\"twitter:description\" content=\"전국의 마사지맛집, 나비야넷에 다 모여있어요\">\n    <meta name=\"twitter:image\" content=\"https://wecan001.cafe24.com/a1/img/common/title_icon.png\">\n    <link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"https://wecan001.cafe24.com/a1/img/common/title_icon.png\">\n    <link rel=\"stylesheet\" href=\"../css/plugin/swiper-bundle.min.css\">\n    <link rel=\"stylesheet\" href=\"../css/content.css\">\n    <script src=\"../js/plugin/jquery-3.4.1.min.js\"></script>\n    <script src=\"../js/plugin/swiper.min.js\"></script>\n    <script src=\"../js/commonUI.js\"></script>\n    <script src=\"../js/content.js\"></script>\n    <!-- <?php include (\"include/head_main.html\"); ?> -->\n</head>",
+			"/main2",
+			"/common2",
+			".header .nav_wrap",
+			".header .nav .itm",
+			".header .login_wrap",
+			".header .nav_wrap",
+			".btnarea",
+			".terms_list .btn_more",
+			".frm_lab .txt",
+			"comtit",
+			"line-heigh",
+			"tit_area.comtit",
+			".tit_area.comtit3",
+			"5p",
+			".frm_box .flexbox",
+			"<input",
+			".frm_box .flexbox ",
+			"flexbox",
+			"<div>",
+			"flexbox",
+			" inpu",
+			"frm_box",
+			".frm_box .btncom.sizeL",
+			".frm_box .flexbox > *",
+			".frm_lab.lg .txt",
+			".frm_box .flexbox, .frm_box .frm_area",
+			"회원가입",
+			".tit_area.comtit1",
+			"t_area comtit",
+			"주변 인기 마사지",
+			".tit_area.comtit1 .comtit",
+			"010",
+			"tel",
+			"ptr_info",
+			".best_msg_area .swiper-scrollbar",
+			"selects",
+			".review_list .tbl .colw4",
+			"tbl_cols",
+			"sidemenu",
+			".swiper-scrollbar",
+			".gallerys",
+			".best_msg_area .swiper.gallerys .itm"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"/content/temp_map",
+			"/img/content/",
+			"<script src=\"../js/html_commonUI.js\"></script>",
+			"<?php include (\"include/footer.html\"); ?>",
+			"<?php include (\"include/aside.html\"); ?>",
+			"<?php include (\"include/header.html\"); ?>",
+			"<!-- <?php include (\"include/header.html\"); ?> -->\n        <!-- content -->",
+			"<?php include (\"include/footer.html\"); ?>",
+			"<?php include (\"include/aside.html\"); ?>",
+			"<?php include (\"include/header.html\"); ?>",
+			"<?php include (\"include/head.html\"); ?>",
+			"/main",
+			"/common",
+			"comtit2",
+			"\"detail_view inbox",
+			"aside",
+			"tag_area\">\n                                <span class=\"tags tag",
+			"tag_area\">",
+			"content/",
+			"<table class=\"tbl-board aice-table\">",
+			"aice-table",
+			"\n    init();",
+			"init();     ",
+			"    init();  ",
+			"\n    init();  ",
+			"    init();",
+			"  <script src=\"../scripts/script.js\"></script>\n  <script>\n    init(); ",
+			"<div class=\"detail-content\">",
+			"<div class=\"detail-content-wrap\">",
+			"<ul class=\"tab-change tab-menu\">"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "D:\\_PROJECT"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/_PROJECT/test_study/html/python02.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 144,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								144,
+								144
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 547,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								547,
+								547
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<pre class=\"brush:js javascrip\">",
+							"incomplete_sync": null,
+							"is_init_dirty_state": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1223,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								525,
+								525
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"incomplete_sync": null,
+							"is_init_dirty_state": true,
+							"syntax": "Packages/Git Formats/Git Log.sublime-syntax",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1156,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								167,
+								167
+							]
+						],
+						"settings":
+						{
+							"auto_name": "bounce",
+							"incomplete_sync": null,
+							"is_init_dirty_state": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 44.8
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SFTP":
+	{
+		"height": 199.0
+	},
+	"output.exec":
+	{
+		"height": 156.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"include/head.html",
+				"nabiya2\\html\\include\\head.html"
+			],
+			[
+				"menulist.html",
+				"nabiya2\\guide\\menulist.html"
+			],
+			[
+				"/guide/menulist.html",
+				"nabiya\\guide\\menulist.html"
+			],
+			[
+				"partner_list",
+				"nabiya2\\html\\partner_list.html"
+			],
+			[
+				"gallery_list.html",
+				"nabiya2\\_html\\gallery_list.html"
+			],
+			[
+				"guide",
+				"nabiya2\\guide\\guide.html"
+			],
+			[
+				"aside",
+				"nabiya2\\html\\include\\aside.html"
+			],
+			[
+				"reset",
+				"nabiya2\\css\\reset.css"
+			],
+			[
+				"/gallery_view.html",
+				"nabiya2\\html\\gallery_view.html"
+			],
+			[
+				"gallery_view",
+				"nabiya2\\html\\gallery_view.html"
+			],
+			[
+				"guide/guide.html",
+				"nabiya\\guide\\guide.html"
+			],
+			[
+				"lay",
+				"nabiya\\css\\layout.css"
+			],
+			[
+				"commonUI.js",
+				"nabiya2\\js\\commonUI.js"
+			],
+			[
+				"include/header.html",
+				"nabiya\\html\\include\\header.html"
+			],
+			[
+				"include/head_main.html",
+				"nabiya2\\html\\include\\head_main.html"
+			],
+			[
+				"style",
+				"aice-main\\css\\style.scss"
+			],
+			[
+				"ct_01_04_01.html",
+				"aice-main\\pages\\project_01_04_01.html"
+			],
+			[
+				"ages/project_01_01.html",
+				"aice-main\\pages\\project_01_01.html"
+			],
+			[
+				"ges/project_01_05.html",
+				"aice-main\\pages\\project_01_05.html"
+			],
+			[
+				"ges/edu-register.html",
+				"aice-main\\pages\\edu-register.html"
+			],
+			[
+				"sytl",
+				"aice-main\\css\\style.scss"
+			],
+			[
+				"script",
+				"aice-main\\scripts\\script.js"
+			],
+			[
+				"/aice-main/styles/font.css",
+				"D:\\_PROJECT\\aice-main\\styles\\font.css"
+			],
+			[
+				"pages/project_01_02.html",
+				"aice-main\\pages\\project_01_02.html"
+			],
+			[
+				"b0101/skin/board/product_01/style.css",
+				"www\\theme\\wb0101\\skin\\board\\product_01\\style.css"
+			],
+			[
+				"wb0101/skin/board/product_01/style.css",
+				"www\\theme\\wb0101\\skin\\board\\product_01\\style.css"
+			],
+			[
+				"theme/wb0101/css/board.cs",
+				"www\\theme\\wb0101\\css\\board.css"
+			],
+			[
+				"skin prodect  list",
+				"www\\theme\\wb0101\\skin\\board\\product_detail_01\\list.skin.php"
+			],
+			[
+				"heme/wb0101/css/board.css",
+				"www\\theme\\wb0101\\css\\board.css"
+			],
+			[
+				"theme/wb0101/skin/board/product_01/style.css",
+				"www\\theme\\wb0101\\skin\\board\\product_01\\style.css"
+			],
+			[
+				"theme/wb0101/skin/latest/latest_gallRocket/style.css",
+				"www\\theme\\wb0101\\skin\\latest\\latest_gallRocket\\style.css"
+			],
+			[
+				"theme/latest_gallRocket",
+				"www\\theme\\wb0101\\skin\\latest\\latest_gallRocket\\latest.skin.php"
+			],
+			[
+				"sec02",
+				"www\\mainpage\\sec02.php"
+			],
+			[
+				"c_view.php",
+				"www\\a\\c_view.php"
+			],
+			[
+				"view span",
+				"www\\theme\\wb0101\\skin\\board\\product_01_backup\\view.skin_221012.php"
+			],
+			[
+				"a/c_view.php",
+				"www\\a\\c_view.php"
+			],
+			[
+				"me/wb0101/skin/board/product_01/style.css",
+				"www\\theme\\wb0101\\skin\\board\\product_01\\style.css"
+			],
+			[
+				"theme/wb0101/css/board.css",
+				"www\\theme\\wb0101\\css\\board.css"
+			],
+			[
+				"wb0101/css/tblayout.css",
+				"www\\theme\\wb0101\\css\\tblayout.css"
+			],
+			[
+				"skin/board/product_01/style.css",
+				"www\\theme\\wb0101\\skin\\board\\product_01\\style.css"
+			],
+			[
+				"/theme/wb0101/skin/board/product_01/style.css",
+				"www\\theme\\wb0101\\skin\\board\\product_01\\style.css"
+			],
+			[
+				"221110",
+				"www\\theme\\wb0101\\skin\\board\\product_01\\list.skin_221110.php"
+			],
+			[
+				"list.skin.php",
+				"www\\theme\\wb0101\\skin\\board\\product_01\\list.skin.php"
+			],
+			[
+				"list.skin",
+				"www\\skin\\board\\gallery\\list.skin.php"
+			],
+			[
+				"galle",
+				"www\\skin\\board\\gallery\\list.skin.php"
+			],
+			[
+				"board.css",
+				"www\\theme\\wb0101\\css\\board.css"
+			],
+			[
+				"/theme/wb0101/css/tblayout.css",
+				"www\\theme\\wb0101\\css\\tblayout.css"
+			],
+			[
+				"theme\\wb0101\\skin\\board\\product_01 view.s",
+				"www\\theme\\wb0101\\skin\\board\\product_01\\view.skin.php"
+			],
+			[
+				"view.skin.php",
+				"www\\mobile\\skin\\board\\basic\\view.skin.php"
+			],
+			[
+				"boarder view",
+				"www\\skin\\board\\gallery\\view.skin.php"
+			],
+			[
+				"skin",
+				"www\\skin\\board\\basic\\view.skin.php"
+			],
+			[
+				"www/theme/wb0101/css/tblayout.css",
+				"www\\theme\\wb0101\\css\\tblayout.css"
+			],
+			[
+				"theme\\wb0101\\skin\\latest\\latest_gallRocket\\style.css",
+				"www\\theme\\wb0101\\skin\\latest\\latest_gallRocket\\style.css"
+			],
+			[
+				"theme\\wb0101\\skin\\latest\\latest_gallRocket\\latest.skin.php",
+				"www\\theme\\wb0101\\skin\\latest\\latest_gallRocket\\latest.skin.php"
+			],
+			[
+				"wb0101\\skin\\latest\\latest_gallRocket\\latest.skin.php",
+				"www\\theme\\wb0101\\skin\\latest\\latest_gallRocket\\latest.skin.php"
+			],
+			[
+				"test1111111111111.css",
+				"www\\theme\\wb0101\\css\\test1111111111111.css"
+			],
+			[
+				"latest.skin.php",
+				"skin\\latest\\basic\\latest.skin.php"
+			],
+			[
+				"/wb0101/skin/latest/latest_gallRocket/style.css",
+				"theme\\wb0101\\skin\\latest\\latest_gallRocket\\style.css"
+			],
+			[
+				"eme\\wb0101\\skin\\latest\\latest_gallRocket\\latest.skin.php",
+				"theme\\wb0101\\skin\\latest\\latest_gallRocket\\latest.skin.php"
+			],
+			[
+				"gallery",
+				"skin\\board\\gallery\\list.skin.php"
+			],
+			[
+				"theme/wb0101/css/tblayout.css",
+				"theme\\wb0101\\css\\tblayout.css"
+			],
+			[
+				"sec02.php",
+				"mainpage\\sec02.php"
+			],
+			[
+				"\\skin\\latest\\latest_gallRocket\\style.css",
+				"theme\\wb0101\\skin\\latest\\latest_gallRocket\\style.css"
+			],
+			[
+				"sec02.",
+				"mainpage\\sec02.php"
+			],
+			[
+				"view.skin",
+				"skin\\board\\basic\\view.skin.php"
+			],
+			[
+				"tblayout.css",
+				"theme\\wb0101\\css\\tblayout.css"
+			],
+			[
+				"latest_gallRocket",
+				"theme\\wb0101\\skin\\latest\\latest_gallRocket\\latest.skin.php"
+			],
+			[
+				"head.php",
+				"head.php"
+			],
+			[
+				"index.php",
+				"index.php"
+			],
+			[
+				"heme/wb0101/css/tblayout.css",
+				"theme\\wb0101\\css\\tblayout.css"
+			],
+			[
+				"a/review.php",
+				"a\\review.php"
+			],
+			[
+				"latest_gallRocket/style.css",
+				"theme\\wb0101\\skin\\latest\\latest_gallRocket\\style.css"
+			],
+			[
+				"theme/wb0101/skin/latest/latest_news/style.css",
+				"theme\\wb0101\\skin\\latest\\latest_news\\style.css"
+			],
+			[
+				"theme\\wb0101\\skin\\latest\\latest_gallRocket\\style.css ",
+				"theme\\wb0101\\skin\\latest\\latest_gallRocket\\style.css"
+			],
+			[
+				"theme/wb0101/css/index.css",
+				"theme\\wb0101\\css\\index.css"
+			],
+			[
+				"/theme/wb0101/css/board.css",
+				"www\\theme\\wb0101\\css\\board.css"
+			],
+			[
+				"boar",
+				"bbs\\board.php"
+			],
+			[
+				"product_view",
+				"www\\theme\\wb0101\\skin\\board\\product_01\\view.skin.php"
+			],
+			[
+				"/theme/wb0101/skin/latest/latest_gallRocket/style.css",
+				"www\\theme\\wb0101\\skin\\latest\\latest_gallRocket\\style.css"
+			],
+			[
+				"/theme/wb0101/css/tblayout.cs",
+				"www\\theme\\wb0101\\css\\tblayout.css"
+			],
+			[
+				"thumbnail.lib.php",
+				"www\\lib\\thumbnail.lib.php"
+			],
+			[
+				"detail_view",
+				"D:\\_PROJECT\\nabiya\\html\\detail_view.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 508.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 382.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 310.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
